@@ -1,5 +1,8 @@
 ﻿using Android.Media;
 using System;
+using Xamarin.Forms;
+
+[assembly: Dependency(typeof(MonkeyTap.PlatformSoundPlayer))]
 
 namespace MonkeyTap
 {

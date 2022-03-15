@@ -8,7 +8,7 @@ namespace MonkeyTap
         {
             InitializeComponent();
 
-            MainPage = new MonkeyTapPage(); 
+            MainPage = new MonkeyTapWithSoundPage();
         }
 
         protected override void OnStart()
