@@ -63,7 +63,7 @@ namespace MonkeyTap
             return !awaitingTaps;
         }
 
-        private void FlashBoxView(int index)
+        public virtual void FlashBoxView(int index)
         {
             boxViews[index].Color = colors[index].WithLuminosity(onLuminosity);
             Device.StartTimer(TimeSpan.FromMilliseconds(flashDuration), () =>
@@ -112,9 +112,9 @@ namespace MonkeyTap
 
             for (int index = 0; index < 4; index++)
                 boxViews[index].Color = Color.Gray;
-
             startGameButton.Text = "Try again?";
             startGameButton.IsVisible = true;
         }
+
     }
 }
